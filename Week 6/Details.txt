@@ -1,0 +1,10 @@
+Design Principles:
+
+I decided to do Mapping; attatched are two simple html/css pages
+
+
+Card Sort :
+
+I already did a preliminary sort of my cards for last weeks assignment using the Optimal Sort website.
+
+I have a screenshot of the webpage where I sorted my cards and will be including the image file from last week & a converted PDF view of the same image.

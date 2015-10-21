@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<head>
+<style>
+body{
+	background-color: #D3D3D3;
+}
+header {
+      text-align: center;
+      background-color: #334C80 ;
+      background-size: cover;
+      color: white;
+      }
+.boxes{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;	
+}
+
+.box1{
+	display:flex;
+	flex-direction:column;
+	height: 150px;
+  	width: 150px;
+ 	background-color:yellow;
+ 	font-size:45px;
+ 	padding: 50px 0 0 60px;
+}
+
+.box2{
+	display:flex;
+	flex-direction:column;
+	height: 150px;
+  	width: 150px;
+  	background-color:red;
+ 	font-size:45px;
+ 	padding: 45px 0 0 60px;		
+}
+
+.box3{
+	display:flex;
+	flex-direction:column;
+	height: 150px;
+  	width: 150px;
+  	background-color:blue;
+  	font-size:45px;
+ 	padding: 45px 0 0 60px;
+}
+
+.box4{
+	display:flex;
+	flex-direction:column;
+	height: 150px;
+  	width: 150px;
+  	background-color:purple;
+  	font-size:45px;
+ 	padding: 45px 0 0 60px;	
+}
+
+p{
+	text-align:center;
+	font-size:16px;
+}
+
+h1{
+	padding:30px;
+}
+
+</style>
+</head>
+<body>
+	<header>
+		<h1>"Correct" Mapping</h1>
+	</header>
+<div class="boxes">
+	<button type="button" class="box1">A</button>
+	<button type="button" class="box2">B</button>	
+	<button type="button" class="box3">C</button>
+	<button type="button" class="box4">D</button>
+</div>
+<p>This would be a more correct usage of mapping where each image is a link
+	to the corresponding page instead of separate buttons. This way users intuitively
+	click the images and in turn are linked to the correct page.</p>
+</body>
