@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="description" content="">
+		<meta name="author" content="Andrew">
+		
+		
+		<title>HTML</title>
+		<link href="style.css" rel="stylesheet">
+		<script language="JavaScript" src="script.js"></script>
+	</head>
+
+	<body> <!--onload="changeImage('slideImg')" This made a slideshow play autmatically
+		I decided I didn't want to use it in the end. Left the Javascript code in as well.-->
+		<div id="wrapper">			
+			<header>
+				<h1 id='bmarble'>TheBlueMarble</h1>
+				<nav>
+				<ul>	
+					<li><a href="#"><img src="images/home.png"></a></li>
+					<li><a href="#">Gallery</a>
+							<ul>
+								<li><a href="#">Animals</a></li>
+								<li><a href="landscapes.html">Landscapes</a></li>
+								<li><a href="#">Plants</a></li>
+								<li><a href="#">Other</a></li>
+							</ul>
+						</li>
+					<li><a href="#">Videos</a>
+							<ul>
+								<li><a href="#">How-to/tutorial</a></li>
+								<li><a href="#">PSA</a></li>
+								<li><a href="#">User-submitted</a></li>
+								<li><a href="#">Educational</a></li>
+							</ul>
+						</li>
+					<li><a href="#">Articles</a>
+							<ul>
+								<li><a href="#">Educational</a></li>
+								<li><a href="#">Recent News</a></li>
+								<li><a href="#">Opinions</a></li>
+							</ul>
+						</li>
+					<li><a href="#">About Us</a>
+							<ul>
+								<li><a href="#">Our Mission</a></li>
+								<li><a href="#">Contribute To Our Site</a></li>
+								<li><a href="#">Volunteer Opportunities</a></li>
+								<li><a href="#">Get In Touch</a></li>
+							</ul>
+						</li>
+					<li><a href="#"><img src="images/cart.png"></a></li>
+				</ul>
+			</nav>
+			</header>
+			
+			<div class="slideshow">
+				<table class="slideshowtable">
+					<tr>
+						<td>
+							<a href="#" id="previous" onclick="prevImage('slideImg'); clearTimeout(timerID)"><img src="images/left.png"></a>
+						</td>
+						<td>
+							<img name="slideImg" src="images/frog.jpg" width=460 height=308>
+						</td>
+						<td>
+							<a href="#" id="next" onclick="changeImage('slideImg'); clearTimeout(timerID)"><img src="images/right2.png"></a>
+						</td>
+					</tr>
+				</table>
+			</div>
+			
+			<div class="divider">
+			</div>
+			
+			<div class="popularimages">
+				
+				<div class="imageview">
+					<img src="images/bamboo.jpg" width=160 height="108"id="bamboo"/>	
+				</div>
+				
+				<div class="imageview">
+					<img src="images/cheetah.jpg" width=160 height=108/>
+				</div>
+				
+				<div class="imageview">
+					<img src="images/giraffe.jpg" width=160 height=108/>		
+				</div>
+				
+				<div class="imageview">
+					<img src="images/island.jpg" width=160 height=108/>	
+				</div>
+				
+				<div class="imageview">
+					<img src="images/sloth.jpg" width=160 height=108/>
+				</div>
+			</div>
+			
+			<div id="search">
+				<input type="submit">
+				<input type="search" placeholder="Search Popular Images">
+			</div>
+			
+			<div class="divider">
+			</div>
+			
+			<br></br>
+			
+			<div class="video">
+				<iframe width="100%" height="315" id="video"
+					src="http://www.youtube.com/embed/Rk6_hdRtJOE?autoplay=0">
+				</iframe>
+				<div class="description">
+					<h3>The Mountain</h3>
+					<p>Amazing and relaxing video of nature including trees, mountains, stars and our beautiful Earth. 
+					</p>
+					<br></br>
+					<p>	Follow Facebook: http://www.facebook.com/TSOPhotography
+						<br></br>
+						Follow Twitter:http://twitter.com/TSOPhotography
+					</p>
+				</div>	
+			</div>
+			
+			<div class="divider">
+			</div>
+				
+			<div class="articles">
+							
+				<h3>Recommended Articles</h3>				
+				
+				<div class="articlelink">
+					<a href="#"><img src="images/treehugger.jpg"  width=160 height=108/></a>
+				</div>
+				
+				<div class="articlelink">
+					<a href="#"><img src="images/nasa.jpg" width=160 height=108/></a>
+				</div>
+				
+				<div class="articlelink">
+					<a href="#"><img src="images/natgeo.jpg" width=160 height=108/></a>
+				</div>
+				
+				<div class="articlelink">
+					<a href="#"><img src="images/mother.jpg" width=160 height=108/></a>
+				</div>	
+							
+			</div>
+			
+			<div class="divider">
+			</div>
+			
+			<footer>
+			<div class="foot">
+				<br></br>
+				<p>&copy;Andrew McClelland</p>
+			</div>
+			
+			<div class="socialmedia">
+				<p>Connect With Us!</p>
+				<ul>
+					<li><a href="https://twitter.com/"><img src="images/twitter.png"></a></li>
+					<li><a href="https://www.facebook.com/"><img src="images/facebook.png"></a></li>
+					<li><a href="https://www.youtube.com/"><img src="images/youtube.png"></a></li>
+					<li><a href="https://plus.google.com/collections/featured"><img src="images/google.png"></a></li>
+				</ul>	
+			</div>
+			
+			<div class="foot">
+				
+				<p></p>
+			</div>
+			</footer>
+		</div>
+	</body>
+</html>

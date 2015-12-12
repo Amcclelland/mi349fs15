@@ -1,0 +1,268 @@
+header{
+	background: url('http://www.bullshift.net/data/images/2013/09/earth.jpg');
+	background-size:cover;
+	color:white;
+}
+#bmarble{
+	text-align:left;
+	color:white;
+	padding: 15px 0 165px 15px;
+	font-size:36px;
+}
+body{
+	background:rgba(0, 0, 0, 1);
+	font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+	overflow:auto;
+}
+
+h1, h2, h3{
+	text-align:center;
+	padding-left:5%;
+}
+
+
+
+/*img{
+	text-align: center;
+	max-width:100%;
+	height:auto;
+	width:auto;
+}*/
+
+#wrapper{
+	margin: 0 auto;
+	max-width: 1020px;
+	width:98%;
+	background:rgba(150,150,150,1);
+	/*border:1px solid rgba(255, 255, 255, 0.9);*/
+	border-radius:2px;
+	box-shadow:0 0 10px 0 rgba(255, 255, 255, 0.9);
+}
+nav {
+	/*position nav bar*/
+	text-align:center;
+	margin: 0 auto;
+	position:relative;
+	background: #efefef; 
+	background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);  
+	background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%); 
+	background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%);	
+	
+}
+
+nav ul ul {
+	/*keeps everything from showing at once*/
+	display: none;
+}
+
+	nav ul li:hover > ul {
+		/*allow separate submenu for each category*/
+		display: block;
+	}
+
+
+nav ul {
+	/*create main nav bar; formatting*/
+	background: #efefef; 
+	background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);  
+	background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%); 
+	background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%); 
+	padding: 0px 25px 0 25px;
+	margin: 0 auto;
+	border-radius: 0px;  
+	list-style: none;
+	position:relative;
+	display: inline-flex;
+	flex-flow:row wrap;
+	
+}
+
+	nav ul li {
+		/*vertical to horizontal nav*/
+		float: left;
+	}
+		nav ul li:hover {
+			/*main nav hover colors*/
+			background: #4b545f;
+			background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
+			background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+			background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);
+		}
+			nav ul li:hover a {
+				/*highlighted nav text color - high contrast*/
+				color: #fff;
+			}
+		
+		nav ul li a {
+			/*resize navbar boxes and text*/
+			display: block; 
+			padding: 8px 40px;
+			color: #757575; 
+			text-decoration: none;
+		}
+			
+		
+	nav ul ul {
+		/*separate dropdown from previous stylings*/
+		background: #5f6975; 
+		border-radius: 0px; 
+		padding: 0;
+		position: absolute; 
+		top: 100%;
+	}
+		nav ul ul li {
+			/*vertical dropdown/borders*/
+			float: none; 
+			border-top: 1px solid #6b727c;
+			border-bottom: 1px solid #575f6a; 
+			position: relative;
+		}
+			nav ul ul li a {
+				/*resize dropdown*/
+				padding: 8px 40px;
+				color: #fff;
+			}	
+				nav ul ul li a:hover {
+					/*dropdown highlight color*/ 
+					background: #4b545f;
+				}
+
+.slideshow{
+	background: rgba(100,100,100,1);
+	padding: 20px 0 20px 0px;
+	text-align:center;
+}
+
+.slideshowtable{
+	display:inline-flex;
+}
+
+.popularimages{
+	padding: 20px 0 0 0;
+	text-align:center	
+}		
+
+.imageview{
+	display:inline-flex;
+	box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+}
+
+#search{
+	text-align:center;
+	padding: 10px 0 10px 0;
+}
+
+.video{
+	-webkit-column-count:2;
+	-moz-column-count:2;
+	-webkit-column-gap: 40px;
+    -moz-column-gap:40px;
+}
+
+.video h3{
+	background:rgba(140,140,140,1);
+	margin:0 20px 0 0;
+	padding:0;
+	border-radius:5px;
+	
+}
+
+iframe{
+	margin: 0 0 30px 20px;
+	border:2px solid black;
+}
+
+.articles{
+	background:rgba(100,100,100,1);
+	padding: 15px 0 0 0;
+	text-align:center
+}
+
+.articlelink{
+	display:inline-flex;	
+	padding:8px 10px 5px 10px;
+	margin: -10px 0 30px 0;	
+	background:rgba(140,140,140,1);
+	border-radius:5px;
+}
+
+.articles h3{
+	margin: 0 0 20px 0;
+}
+
+.divider{
+	border:1px solid black;
+	margin: 0 0px 0 0px;
+}
+
+.foot{
+    text-align: center ;
+    margin:-30px 0 0 0;
+}
+
+.socialmedia{
+	list-style-type:none;
+	text-align:center;
+}
+
+.socialmedia ul{
+	margin:0 10px 50px 0;
+	padding:0;
+}
+
+.socialmedia li{
+	display:inline-flex;	
+	margin: 0 0 10px 0;
+	padding:0 5px 0 0;
+}	
+/*~~~~~~~~~~~~~~~~~~~~~~~~Landscape Gallery(a.k.a The Nighmare)~~~~~~~~~~~~~~~~~~~*/
+.img {
+    margin: 10px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}	
+
+.img:hover {
+    border: 1px solid #777;
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+    background-color: rgba(125,125,125,1);
+}
+
+
+@media (max-width:400px){
+
+	#bmarble{
+		text-align:center;
+		font-size:24px;
+	}	
+}
+
+@media (max-width:600px){
+	.slideshow{
+		display:none;
+	}
+	.slideshowtable{
+		display:none;
+	}	
+}
+
+@media (max-width:800px){
+	.video{
+		-webkit-column-count:1;
+		-moz-column-count:1;
+	}
+	iframe{
+		margin: 0;
+		padding:0;
+	}
+}
